@@ -48,7 +48,7 @@ export default function Register() {
       <div className="bg-cover bg-no-repeat bg-center bg-[#C5C8B5] w-screen h-screen">
         <div className="fixed bg-[#171E27] w-screen h-[5vw] opacity-[60%]">
         </div>
-        <button onClick={home} className="fixed bg-cover left-[3vw] bg-tbr_singkat top-0 bg-right bg-no-repeat w-[5vw] h-[5vw]">
+        <button onClick={home} className="fixed bg-cover left-[3vw] bg-tbr_singkat z-10 top-0 bg-right bg-no-repeat w-[5vw] h-[5vw]">
         </button>
         <button
            onClick = {navToLog}

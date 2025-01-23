@@ -255,7 +255,7 @@ Total harga: ${harga}
               <textarea 
                 onChange={Alamat} 
                 placeholder="Tulis alamatmu di sini
-  (cth: Jl. Skibidi E No. 969, RT 69, RW 69, Kel. Ohio, Kec. Mango, Kota Sigma)" 
+(cth: Jl. Skibidi E No. 969, RT 69, RW 69, Kel. Ohio, Kec. Mango, Kota Sigma)" 
                 value={alamat} 
                 className={`absolute px-[1.5vw] py-[1vw] ml-[22vw] mt-[30vw] border-[0.2vw] ${alamat.trim().length == 0 ? "border-[red]" : "border-[black]"} w-[45vw] h-[13vw] rounded-[2vw] font-inconsolata text-[2vw] focus:outline-none resize-none`}
               />

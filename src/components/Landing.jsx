@@ -74,7 +74,7 @@ export default function Landing() {
       <div className="bg-no-repeat min-h-screen min-w-screen bg-center bg-cover bg-[#C5C8B5]">
         <div className="fixed z-10 bg-[#5D625F] w-screen h-[5vw]">
         </div>
-        <div className="fixed z-10 bg-cover left-[3vw] bg-tbr_singkat top-0 bg-right bg-no-repeat w-[5vw] h-[5vw]"></div>
+        <div className="fixed z-11 bg-cover left-[3vw] bg-tbr_singkat top-0 bg-right bg-no-repeat w-[5vw] h-[5vw]"></div>
         <button
            onClick = {navToReg}
            className = "fixed z-10 border-[0.2vw] border-[#F4DF00] opacity-[80%] hover:opacity-[100%] font-inconsolata text-[2vw] text-[#F4DF00] bg-transparent top-[0.5vw] right-[5vw] w-[10vw] h-[4vw]">
