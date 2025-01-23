@@ -13,7 +13,7 @@ app.use(cookieParser());
 
 app.use(cors({
     origin: ["https://tahu-bulat-ramid-app.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST"],
     credentials: true
 }));
 
@@ -25,4 +25,4 @@ app.use('/api/user', user_router);
 app.use('/api/ulasan', ulasan_router);
 app.use('/api/pesanan', pesanan_router);
 
-app.listen(5173);
+app.listen(5001);
