@@ -17,7 +17,7 @@ exports.register = async (req, res) => {
             res.cookie("token", token, {
                 httpOnly: true,
                 secure: true, 
-                sameSite: "none"
+                sameSite: "lax"
             });
             
             res.status(201).json({success: true, message: "Successfully created user", data: new_user, token: token});

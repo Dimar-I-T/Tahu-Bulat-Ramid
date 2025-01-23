@@ -21,7 +21,7 @@ export default function Pesan() {
     const handleSubmit = (e) => {
       e.preventDefault();
       if (alamat.trim().length > 0 && isValid == 1 && zero == 0){
-        axios.post("http://localhost:5001/api/pesanan/add-pesanan", {jumlah: jumlahT, bumbu: pilihanBumbu, alamat: alamat}).then((response) => {
+        axios.post("https://tahu-bulat-ramid-app.vercel.app/api/pesanan/add-pesanan", {jumlah: jumlahT, bumbu: pilihanBumbu, alamat: alamat}).then((response) => {
           const resp = JSON.stringify(response.data.success, null, 2)
           if (resp != false){
             setId(response.data.id);
@@ -48,7 +48,7 @@ export default function Pesan() {
     }
   
     useEffect(() => {
-      axios.get("http://localhost:5001/user/get-my-info").then(result => {
+      axios.get("https://tahu-bulat-ramid-app.vercel.app/api/user/get-my-info").then(result => {
         const resp = JSON.stringify(result.data.success, null, 2)
         if (resp != false){
           setData(result.data.data);
@@ -58,7 +58,7 @@ export default function Pesan() {
         }
       })
   
-      axios.get("http://localhost:5001/ulasan/get-all-ulasan").then(result => {
+      axios.get("https://tahu-bulat-ramid-app.vercel.app/api/ulasan/get-all-ulasan").then(result => {
         const resp = JSON.stringify(result.data.success, null, 2)
         if (resp != false){
           setUlasanSemua(result.data.data);

@@ -10,7 +10,7 @@ export default function Ulasan() {
   
     axios.defaults.withCredentials = true;
     useEffect(() => {
-      axios.get("http://localhost:5001/api/ulasan/get-all-ulasan").then(result => {
+      axios.get("https://tahu-bulat-ramid-app.vercel.app/api/ulasan/get-all-ulasan").then(result => {
         const resp = JSON.stringify(result.data.success, null, 2)
         if (resp != false){
           setUlasanSemua(result.data.data);
