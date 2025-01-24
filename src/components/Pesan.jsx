@@ -203,7 +203,7 @@ Total harga: ${harga}
         </button>
         {selesai == 0 && <div className="relative bg-transparent object-center left-1/2 transform -translate-x-1/2 h-[30vw] md:h-[15vw] w-[90vw] top-[10vw] md:top-[5vw]">
           <div class="absolute bg-cover ml-[5vw] md:ml-[18vw] mr-[1vw] bg-no-repeat bg-tbr_full w-[27vw] h-[27vw] md:w-[17vw] md:h-[15vw]"></div>
-          <div className="relative bg-transparent object-center left-[9vw] md:left-[-3vw] h-[20vw] md:h-[10vw] w-[73vw] top-[5vw] md:top-[2vw]">
+          <div className="relative bg-transparent object-center left-[11vw] md:left-[-3vw] h-[20vw] md:h-[10vw] w-[73vw] top-[5vw] md:top-[2vw]">
             <h2 className="absolute font-inconsolata text-center right-0 font-semibold text-[#171E27] mt-[3vw] ml-[1vw] text-[6vw] md:text-[4vw]">
               Pesan Tahu Bulat
             </h2>

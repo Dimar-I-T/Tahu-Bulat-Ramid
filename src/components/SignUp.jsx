@@ -55,7 +55,7 @@ export default function Register() {
            className = "fixed opacity-[80%] hover:opacity-[100%] font-inconsolata text-[3.5vw] md:text-[2vw] text-[#F4DF00] bg-transparent top-[1.5vw] md:top-[0.5vw] right-[5vw] w-[10vw] h-[4vw]">
             Login
         </button>
-        <div className="flex justify-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 items-center w-[100vw] h-[60vw] md:h-[20vw] relative">
+        <div className="flex justify-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 items-center w-[110vw] md:w-[100vw] h-[60vw] md:h-[20vw] relative">
           <div className="relative bg-transparent aspect-[3/2] w-[60vw] max-w-[1100px] max-h-[700px] mt-[5vw] items-center gap-5 rounded-[5vw] opacity-80">
             <h1 className="absolute font-inconsolata font-semibold text-center left-1/2 transform -translate-x-1/2 text-[#171E27] text-[8.5vw] md:text-[5vw] mt-[-10vw] md:mt-[1.5vw]">
               Sign Up
