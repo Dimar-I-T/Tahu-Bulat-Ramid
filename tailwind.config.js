@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundImage:{
         "tbr_full": "url('/src/img/tahu__3.png')",
-        "tbr_singkat": "url('/src/img/tahu__3__3.png')",
+        "tbr_singkat": "url('/src/img/tahu__3__3.PNG')",
         "star0": "url('/src/img/star0.png')",
         "star1": "url('/src/img/star1.png')",
         "b1": "url('/src/img/b1.png')",
