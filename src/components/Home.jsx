@@ -19,7 +19,7 @@ export default function Home() {
       if (jumlahBintang > 0 && valUlasan.trim().length > 0){
         setBisa(1);
         setIsi([0, 0, 0, 0, 0]);
-        axios.post("https://tahu-bulat-ramid-app.vercel.app/api/user/add-ulasan", {ulasan: valUlasan, bintang: jumlahBintang}).then((response) => {
+        axios.post("https://tahu-bulat-ramid.vercel.app//api/user/add-ulasan", {ulasan: valUlasan, bintang: jumlahBintang}).then((response) => {
           const resp = JSON.stringify(response.data.success, null, 2)
           if (resp != false){
             setValUlasan("");
@@ -31,7 +31,7 @@ export default function Home() {
           alert(err);
         });
   
-        axios.post("https://tahu-bulat-ramid-app.vercel.app/api/ulasan/add-ulasan", {ulasan: valUlasan, bintang: jumlahBintang}).then((response) => {
+        axios.post("https://tahu-bulat-ramid.vercel.app/api/ulasan/add-ulasan", {ulasan: valUlasan, bintang: jumlahBintang}).then((response) => {
           const resp = JSON.stringify(response.data.success, null, 2)
           if (resp != false){
             setValUlasan("");
@@ -58,7 +58,7 @@ export default function Home() {
     }
   
     useEffect(() => {
-      axios.get("https://tahu-bulat-ramid-app.vercel.app/api/user/get-my-info").then(result => {
+      axios.get("https://tahu-bulat-ramid.vercel.app/api/user/get-my-info").then(result => {
         const resp = JSON.stringify(result.data.success, null, 2)
         if (resp != false){
           setData(result.data.data);
@@ -68,7 +68,7 @@ export default function Home() {
         }
       })
   
-      axios.get("https://tahu-bulat-ramid-app.vercel.app/api/ulasan/get-all-ulasan").then(result => {
+      axios.get("https://tahu-bulat-ramid.vercel.app/api/ulasan/get-all-ulasan").then(result => {
         const resp = JSON.stringify(result.data.success, null, 2)
         if (resp != false){
           setUlasanSemua(result.data.data);
@@ -147,8 +147,11 @@ export default function Home() {
         <div className="relative bg-transparent  object-center left-1/2 transform -translate-x-1/2 h-[43vw] md:h-[25vw] w-[90vw] md:top-[11vw] top-[13vw]">
           <div class="absolute bg-cover ml-[0.01vw] md:ml-[18vw] mr-[1vw] bg-no-repeat bg-tbr_full w-[28vw] h-[28vw] md:w-[17vw] md:h-[15vw]"></div>
           <div className="relative  bg-transparent object-center left-[27vw] md:left-[33vw] h-[20vw] md:h-[10vw] w-[60vw] md:w-[35vw] top-[2vw]">
-            <h2 className="absolute font-inconsolata text-center right-0 font-semibold text-[#171E27] text-[7vw] md:text-[4vw]">
-              Selamat Datang, {data?.username}!
+          <h2 className="absolute font-inconsolata text-center right-0 font-semibold text-[#171E27] text-[8vw] md:text-[4vw]">
+              Selamat Datang, 
+              <div className="aboslute bg-transparent w-[50vw] h-[10vw] md:w-[30vw] md:h-[5vw] overflow-hidden whitespace-nowrap text-ellipsis">
+               {data?.username}!
+              </div>
             </h2>
           </div>
           <button
