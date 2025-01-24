@@ -106,7 +106,7 @@ export default function Landing() {
           <h1 className="absolute font-inconsolata ml-[8vw] md:ml-[10vw] font-semibold text-center text-[#171E27] text-[5vw] md:text-[4vw]">
             Rating: 
           </h1>
-          <div className='absolute bg-contain bg-no-repeat ml-[26vw] md:ml-[24vw] bg-star1 w-[5vw] h-[5vw] md:w-[4vw] md:h-[4vw] mt-[1vw]'></div>
+          <div className='absolute bg-contain bg-no-repeat ml-[27vw] md:ml-[25vw] bg-star1 w-[5vw] h-[5vw] md:w-[4vw] md:h-[4vw] mt-[1vw]'></div>
           <h1 className="absolute font-inconsolata ml-[32vw] md:ml-[29.6vw] font-semibold text-stroke-4 text-center text-[#F4DF00] text-[5vw] md:text-[4vw]">
             {ratingMean}
           </h1>
