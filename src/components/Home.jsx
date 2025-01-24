@@ -146,8 +146,8 @@ export default function Home() {
         </button>
         <div className="relative bg-transparent  object-center left-1/2 transform -translate-x-1/2 h-[43vw] md:h-[25vw] w-[90vw] md:top-[11vw] top-[13vw]">
           <div class="absolute bg-cover ml-[0.01vw] md:ml-[18vw] mr-[1vw] bg-no-repeat bg-tbr_full w-[28vw] h-[28vw] md:w-[17vw] md:h-[15vw]"></div>
-          <div className="relative bg-transparent object-center left-[25vw] md:left-[33vw] h-[20vw] md:h-[10vw] w-[65vw] md:w-[35vw] top-[2vw]">
-            <h2 className="absolute font-inconsolata text-center right-0 font-semibold text-[#171E27] text-[8vw] md:text-[4vw]">
+          <div className="relative bg-transparent object-center left-[25vw] md:left-[33vw] h-[20vw] md:h-[10vw] w-[70vw] md:w-[35vw] top-[2vw]">
+            <h2 className="absolute font-inconsolata text-center right-0 font-semibold text-[#171E27] text-[7vw] md:text-[4vw]">
               Selamat Datang, 
               <div className="aboslute bg-transparent w-[50vw] h-[10vw] md:w-[30vw] md:h-[5vw] overflow-hidden whitespace-nowrap text-ellipsis">
                {data?.username}!
