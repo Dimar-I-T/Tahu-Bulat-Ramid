@@ -57,7 +57,7 @@ export default function Register() {
         </button>
         <div className="flex justify-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 items-center w-[110vw] md:w-[100vw] h-[60vw] md:h-[20vw] relative">
           <div className="relative bg-transparent aspect-[3/2] w-[60vw] max-w-[1100px] max-h-[700px] mt-[5vw] items-center gap-5 rounded-[5vw] opacity-80">
-            <h1 className="absolute font-inconsolata font-semibold text-center left-1/2 transform -translate-x-1/2 text-[#171E27] text-[8.5vw] md:text-[5vw] mt-[-10vw] md:mt-[1.5vw]">
+            <h1 className="absolute font-inconsolata font-semibold text-center left-1/2 transform -translate-x-1/2 text-[#171E27] text-[8vw] md:text-[5vw] mt-[-10vw] md:mt-[1.5vw]">
               Sign Up
             </h1>
             <h1 className="absolute font-inconsolata text-[#171E27] text-[5.5vw] md:text-[3vw] ml-[1vw] md:ml-[9vw] top-[5.3vw] md:top-[12vw]">
