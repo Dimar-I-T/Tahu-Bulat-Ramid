@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use(cors({
-    origin: ["https://tahu-bulat-ramid.vercel.app"],
+    origin: ["https://tahu-bulat-ramid-app.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true
 }));

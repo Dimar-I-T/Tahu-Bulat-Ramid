@@ -13,7 +13,7 @@ export default function Login() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
       e.preventDefault();
-      axios.post("https://tahu-bulat-ramid.vercel.app/api/user/login", {username: valUser, password: valPass}).then((response) => {
+      axios.post("https://tahu-bulat-ramid-app.vercel.app/api/user/login", {username: valUser, password: valPass}).then((response) => {
         const resp = JSON.stringify(response.data.success, null, 2)
         if (resp == "true"){
           setBisa(1);
