@@ -14,6 +14,7 @@ export default function Pesan() {
     const [selesai, setSelesai] = useState(0);
     const [data, setData] = useState([]);
     const [bumbu, setBumbu] = useState("Original");
+    const [alamatAda, setAlamatAda] = useState(1);
     const [id, setId] = useState("");
     const konv = {0: " + Pedas", 1: " + Asin", 2: " + BBQ"}
   
@@ -44,6 +45,12 @@ export default function Pesan() {
         }).catch((err) => {
           alert(err);
         });
+      }else{
+        if (alamat.trim().length == 0){
+          setAlamatAda(0);
+        }else{
+          setAlamatAda(1);
+        }
       }
     }
   
@@ -241,13 +248,13 @@ Total harga: ${harga}
             {zero == 1 && isValid == 1 && <h1 className="absolute font-inconsolata text-[red] text-[2.5vw] md:text-[1.5vw] ml-[18vw] md:ml-[42vw] mt-[1vw]">
               Jumlah tidak boleh 0
             </h1>}
-            {(zero == 1 || isValid == 0) && alamat.trim().length > 0 && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[3vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
+            {(zero == 1 || isValid == 0) && alamatAda == 1 && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[3vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
               Jumlah belum valid!
             </h1>}
-            {((zero == 0 && isValid == 1) && alamat.trim().length == 0) && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[3vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
+            {((zero == 0 && isValid == 1) && alamatAda == 0) && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[3vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
               Isi alamatmu!
             </h1>}
-            {((zero == 1 || isValid == 0) && alamat.trim().length == 0) && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[2.5vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
+            {((zero == 1 || isValid == 0) && alamatAda == 0) && <h1 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[red] text-[2.5vw] md:text-[2vw] mt-[82vw] md:mt-[59vw]">
               Isi alamatmu dan jumlah yang valid!
             </h1>}
             <form onSubmit={handleSubmit}>
@@ -270,7 +277,7 @@ Total harga: ${harga}
                 Pesanan Berhasil!
               </h2>
               <h3 className='absolute mt-[71vw] md:mt-[28vw] ml-[12vw] md:ml-[17vw] font-light font-inconsolata text-[2vw] md:text-[1vw]'>
-                Note: Tekan tombol Copy dan pesan akan tercopy secara otomatis
+                Note: Klik tombol kuning dan pesan akan tercopy secara otomatis
               </h3>
             </div>
             <div className='absolute left-1/2 transform -translate-x-1/2 text-[2vw] w-[75vw] md:w-[60vw] h-[55vw] md:h-[20.5vw] bg-[black] opacity-[20%] mt-[25vw] md:mt-[13vw] rounded-[2vw] z-30'></div>
