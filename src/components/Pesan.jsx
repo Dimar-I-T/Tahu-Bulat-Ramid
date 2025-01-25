@@ -282,7 +282,7 @@ Total harga: ${harga}
                 Pesanan Berhasil!
               </h2>
               <h3 className='absolute mt-[71vw] md:mt-[28vw] ml-[12vw] md:ml-[17vw] font-light font-inconsolata text-[2vw] md:text-[1vw]'>
-                Note: Klik tombol kuning dan pesan akan tercopy secara otomatis
+                Note: Klik tombol kuning, lalu pesan akan tercopy secara otomatis.
               </h3>
             </div>
             <div className='absolute left-1/2 transform -translate-x-1/2 text-[2vw] w-[75vw] md:w-[60vw] h-[55vw] md:h-[20.5vw] bg-[black] opacity-[20%] mt-[25vw] md:mt-[13vw] rounded-[2vw] z-30'></div>
