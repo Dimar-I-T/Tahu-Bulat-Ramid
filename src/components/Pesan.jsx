@@ -264,7 +264,7 @@ Total harga: ${harga}
                 placeholder="Tulis alamatmu di sini
 (cth: Jl. Skibidi E No. 969, RT 69, RW 69, Kel. Ohio, Kec. Mango, Kota Sigma)" 
                 value={alamat} 
-                className={`absolute px-[1.5vw] py-[1vw] ml-[18vw] md:ml-[22vw] mt-[46vw] md:mt-[30vw] border-[0.2vw] ${alamat.trim().length == 0 ? "border-[red]" : "border-[black]"} w-[54vw] h-[23vw] md:w-[45vw] md:h-[13vw] rounded-[2vw] font-inconsolata text-[3.3vw] md:text-[2vw] focus:outline-none resize-none`}
+                className={`absolute px-[1.5vw] py-[1vw] ml-[18vw] md:ml-[22vw] mt-[46vw] md:mt-[30vw] border-[0.2vw] ${alamatAda == 0 ? "border-[red]" : "border-[black]"} w-[54vw] h-[23vw] md:w-[45vw] md:h-[13vw] rounded-[2vw] font-inconsolata text-[3.3vw] md:text-[2vw] focus:outline-none resize-none`}
               />
               <button type="submit" className="absolute rounded-[3vw] md:rounded-[2vw] border-[0.3vw] border-[black] opacity-[80%] hover:opacity-[100%] font-inconsolata text-[5vw] md:text-[3vw] font-bold text-[black] bg-[#F4DF00] left-1/2 transform -translate-x-1/2 mt-[87vw] md:mt-[52vw] w-[49vw] h-[14vw] md:w-[25vw] md:h-[5vw]"> PESAN </button>
             </form>
