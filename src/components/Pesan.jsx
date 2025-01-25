@@ -167,6 +167,9 @@ export default function Pesan() {
     const Alamat = event => {
       const newVal = event.target.value;
       setAlamat(newVal);
+      if (newVal.length > 0){
+        setAlamatAda(1);
+      }
     }
   
     const CopyKeWa = () => {
