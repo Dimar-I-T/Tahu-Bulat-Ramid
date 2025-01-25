@@ -169,6 +169,8 @@ export default function Pesan() {
       setAlamat(newVal);
       if (newVal.length > 0){
         setAlamatAda(1);
+      }else{
+        setAlamatAda(0);
       }
     }
   
