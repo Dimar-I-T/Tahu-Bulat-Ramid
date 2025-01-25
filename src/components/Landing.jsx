@@ -85,8 +85,8 @@ export default function Landing() {
            className = "fixed z-10 opacity-[80%] hover:opacity-[100%] font-inconsolata text-[3vw] md:text-[2vw] text-[#F4DF00] bg-transparent top-[1vw] md:top-[0.5vw] right-[21vw] md:right-[17vw] w-[14vw] h-[7vw] md:w-[10vw] md:h-[4vw]">
             Login
         </button>
-        <div className='relative bg-transparent w-[95vw] h-[55vw] md:w-[52vw] md:h-[35vw] left-[1vw] top-[63vw] md:left-[38vw] md:top-[9vw]'>
-          <h1 className="absolute font-inconsolata font-bold text-center top-0 right-0  text-[#171E27] md:mr-[2vw] mr-[9vw] text-[6.5vw] md:text-[4vw]">
+        <div className='relative bg-transparent w-[95vw] h-[55vw] md:w-[52vw] md:h-[35vw] left-[1vw] top-[63vw] md:left-[38vw] md:top-[10vw]'>
+          <h1 className="absolute font-inconsolata font-bold text-center top-0 right-0  text-[#171E27] md:mr-[2vw] mr-[7vw] text-[6.5vw] md:text-[4vw]">
             Tahu Bulat:<br></br>
             Bulat, Gurih, Mantap!
           </h1>
@@ -103,11 +103,11 @@ export default function Landing() {
         <div class="absolute bg-cover top-[8vw] md:top-[5vw] left-1/2 transform -translate-x-1/2 md:left-[20vw] md:right-0 bg-no-repeat bg-tbr_full w-[60vw] h-[60vw] md:w-[40vw] md:h-[40vw]"></div>
         <div className='absolute top-[129vw] rounded-[2vw] md:top-[50vw] h-[10vw] w-[45vw] left-[50vw] transform -translate-x-1/2 md:bg-transparent bg-[black] opacity-[10%] md:h-[5vw] md:w-[50vw]'></div>
         <div className='absolute top-[130vw] md:top-[50vw] h-[10vw] w-[50vw] left-1/2 transform -translate-x-1/2 bg-transparent md:h-[5vw] md:w-[50vw]'>
-          <h1 className="absolute font-inconsolata ml-[9vw] font-semibold text-center text-[#171E27] text-[5vw] md:text-[4vw]">
+          <h1 className="absolute font-inconsolata ml-[8vw] font-semibold text-center text-[#171E27] text-[5vw] md:text-[4vw]">
             Rating: 
           </h1>
-          <div className='absolute bg-contain bg-no-repeat ml-[28vw] md:ml-[25vw] bg-star1 w-[5vw] h-[5vw] md:w-[4vw] md:h-[4vw] mt-[1vw]'></div>
-          <h1 className="absolute font-inconsolata ml-[34vw] md:ml-[29.6vw] font-semibold text-stroke-4 text-center text-[#F4DF00] text-[5vw] md:text-[4vw]">
+          <div className='absolute bg-contain bg-no-repeat ml-[27vw] md:ml-[25vw] bg-star1 w-[5vw] h-[5vw] md:w-[4vw] md:h-[4vw] mt-[1vw]'></div>
+          <h1 className="absolute font-inconsolata ml-[34vw] md:ml-[28.6vw] font-semibold text-stroke-4 text-center text-[#F4DF00] text-[5vw] md:text-[4vw]">
             {ratingMean}
           </h1>
         </div>
