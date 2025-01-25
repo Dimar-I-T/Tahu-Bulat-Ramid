@@ -85,7 +85,7 @@ export default function Landing() {
            className = "fixed z-10 opacity-[80%] hover:opacity-[100%] font-inconsolata text-[3vw] md:text-[2vw] text-[#F4DF00] bg-transparent top-[1vw] md:top-[0.5vw] right-[21vw] md:right-[17vw] w-[14vw] h-[7vw] md:w-[10vw] md:h-[4vw]">
             Login
         </button>
-        <div className='relative bg-transparent border w-[95vw] h-[55vw] md:w-[52vw] md:h-[35vw] left-[1vw] top-[63vw] md:left-[38vw] md:top-[9vw]'>
+        <div className='relative bg-transparent w-[95vw] h-[55vw] md:w-[52vw] md:h-[35vw] left-[1vw] top-[63vw] md:left-[38vw] md:top-[9vw]'>
           <h1 className="absolute font-inconsolata font-bold text-center top-0 right-0  text-[#171E27] md:mr-[2vw] mr-[11vw] text-[6.5vw] md:text-[4vw]">
             Tahu Bulat:<br></br>
             Bulat, Gurih, Mantap!
@@ -102,7 +102,7 @@ export default function Landing() {
         </div>
         <div class="absolute bg-cover top-[8vw] left-1/2 transform -translate-x-1/2 md:left-[20vw] md:right-0 bg-no-repeat bg-tbr_full w-[60vw] h-[60vw] md:w-[40vw] md:h-[40vw]"></div>
         <div className='absolute top-[129vw] rounded-[2vw] md:top-[50vw] h-[10vw] w-[45vw] left-[50vw] transform -translate-x-1/2 md:bg-transparent bg-[black] opacity-[10%] md:h-[5vw] md:w-[50vw]'></div>
-        <div className='absolute top-[130vw] border md:top-[50vw] h-[10vw] w-[50vw] left-1/2 transform -translate-x-1/2 bg-transparent md:h-[5vw] md:w-[50vw]'>
+        <div className='absolute top-[130vw] md:top-[50vw] h-[10vw] w-[50vw] left-1/2 transform -translate-x-1/2 bg-transparent md:h-[5vw] md:w-[50vw]'>
           <h1 className="absolute font-inconsolata ml-[10vw] font-semibold text-center text-[#171E27] text-[5vw] md:text-[4vw]">
             Rating: 
           </h1>
@@ -111,7 +111,7 @@ export default function Landing() {
             {ratingMean}
           </h1>
         </div>
-        <div className="relative rounded-[2vw] bg-transparent object-center left-1/2 border transform -translate-x-1/2 h-[55vw] md:h-[50vw] w-[90vw] top-[96vw] md:top-[36vw]">
+        <div className="relative rounded-[2vw] bg-transparent object-center left-1/2 transform -translate-x-1/2 h-[55vw] md:h-[50vw] w-[90vw] top-[96vw] md:top-[36vw]">
           <h2 className="absolute font-inconsolata left-1/2 transform -translate-x-1/2 text-[#171E27] text-[5vw] max-sm:mt-[-2vw] md:text-[3.5vw]">
             Gambar
           </h2> 
