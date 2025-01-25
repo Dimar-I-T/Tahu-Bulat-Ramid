@@ -8,21 +8,39 @@ export default function Register() {
     const [valUser, setValueUser] = useState("");
     const [valPass, setValuePass] = useState("");
     const [bisa, setBisa] = useState(1);
+    const [userAda, setUserAda] = useState(1);
+    const [passAda, setPassAda] = useState(1);
   
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
       e.preventDefault();
-      axios.post("https://tahu-bulat-ramid-app.vercel.app/api/user/register", {username: valUser, password: valPass}).then((response) => {
-        const resp = JSON.stringify(response.data.success, null, 2)
-        if (resp == "true"){
-          setBisa(1);
-          navigate('/home');
-        }else {
-          setBisa(0);
+      if (valUser.length > 0 && valPass.length > 0){
+        setUserAda(1);
+        setPassAda(1);
+        axios.post("https://tahu-bulat-ramid-app.vercel.app/api/user/register", {username: valUser, password: valPass}).then((response) => {
+          const resp = JSON.stringify(response.data.success, null, 2)
+          if (resp == "true"){
+            setBisa(1);
+            navigate('/home');
+          }else {
+            setBisa(0);
+          }
+        }).catch((err) => {
+          alert(err);
+        });
+      }else{
+        if (valUser.length == 0){
+          setUserAda(0);
+        }else{
+          setUserAda(1);
         }
-      }).catch((err) => {
-        alert(err);
-      });
+        
+        if (valPass.length == 0){
+          setPassAda(0);
+        }else{
+          setPassAda(1);
+        }
+      }
     }
   
     const navToLog = () => {
@@ -65,6 +83,15 @@ export default function Register() {
             </h1>
             {bisa == 0 && <h1 className="absolute font-inconsolata text-[red] text-[2.2vw] md:text-[1.5vw] ml-[28vw] md:ml-[26vw] top-[3vw] md:top-[10vw]">
               username sudah digunakan
+            </h1>}
+            {userAda == 0 && passAda > 0 && <h1 className="absolute font-inconsolata text-[red] text-[1.5vw] md:text-[1.5vw] ml-[28vw] md:ml-[26vw] top-[4vw] md:top-[10vw]">
+              username tidak boleh kosong
+            </h1>}
+            {userAda > 0 && passAda == 0 && <h1 className="absolute font-inconsolata text-[red] text-[1.5vw] md:text-[1.5vw] ml-[28vw] md:ml-[26vw] top-[4vw] md:top-[10vw]">
+              password tidak boleh kosong
+            </h1>}
+            {userAda == 0 && passAda == 0 && <h1 className="absolute font-inconsolata text-[red] text-[1.5vw] md:text-[1.5vw] ml-[28vw] md:ml-[26vw] top-[4vw] md:top-[10vw]">
+              username dan password tidak boleh kosong
             </h1>}
             <h1 className="absolute font-inconsolata text-center text-[#171E27] text-[5.5vw] md:text-[3vw] ml-[1vw] md:ml-[9vw] top-[14.7vw] md:top-[17vw]">
               password
