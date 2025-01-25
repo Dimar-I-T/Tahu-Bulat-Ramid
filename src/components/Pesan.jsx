@@ -179,7 +179,8 @@ export default function Pesan() {
       tempTextarea.value = 
       `
 Pesanan Tahu Bulat
-Untuk: ${data?.username} (id: ${id})
+Untuk: ${data?.username}
+id: ${id}
 Jumlah: ${jumlahT}
 Bumbu: ${bumbu}
 Alamat: ${alamat}
